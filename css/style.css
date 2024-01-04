@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #11c5ed;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.calculator {
+    position: relative;
+}
+
+.segitiga-img {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.h2-container {
+    background-color: #ffe6e6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+    background-color: #11c5ed;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.formula {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    width: calc(49% - 5px);
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #11c5ed;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #11c5ed;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}

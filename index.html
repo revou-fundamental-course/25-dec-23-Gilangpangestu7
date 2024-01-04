@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator Luas dan Keliling Segitiga</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome To Katik</h1>
+        <p>Hai sobat, Saya Aditya Gilang Pangestu;]
+            <p>selamat datang di web apps sederhana yang berfungsi menghitung nilai luas dan keliling bangun datar</p>
+        </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#luas">Luas Segitiga</a></li>
+            <li><a href="#keliling">Keliling Segitiga</a></li>
+        </ul>
+    </nav>
+
+    <div id="luas" class="calculator">
+        <h2>LUAS SEGITIGA</h2>
+        <img src="img/luas.png" alt="Segitiga" class="segitiga-img">
+        <p class="formula">Luas Segitiga = 0.5 × Panjang Alas × Tinggi</p>
+
+        <label for="base">Panjang Alas:</label>
+        <input type="number" id="base" placeholder="Masukkan panjang alas">
+
+        <label for="height">Tinggi:</label>
+        <input type="number" id="height" placeholder="Masukkan tinggi">
+
+        <button onclick="calculateArea()">Hitung Luas</button>
+        <button onclick="resetForm()">Reset</button>
+
+        <p id="result">Hasil Luas:</p>
+    </div>
+
+    <div id="keliling" class="calculator">
+        <h2>KELILING SEGITIGA</h2>
+        <img src="img/keliling.png" alt="Segitiga" class="segitiga-img">
+        <p class="formula">Keliling Segitiga = Panjang Sisi A + Panjang Sisi B + Panjang Sisi C</p>
+
+        <label for="sideA">Panjang Sisi A:</label>
+        <input type="number" id="sideA" placeholder="Masukkan panjang sisi A">
+
+        <label for="sideB">Panjang Sisi B:</label>
+        <input type="number" id="sideB" placeholder="Masukkan panjang sisi B">
+
+        <label for="sideC">Panjang Sisi C:</label>
+        <input type="number" id="sideC" placeholder="Masukkan panjang sisi C">
+
+        <button onclick="calculatePerimeter()">Hitung Keliling</button>
+        <button onclick="resetForm()">Reset</button>
+
+        <p id="result">Hasil Keliling:</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
